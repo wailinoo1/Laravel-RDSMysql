@@ -29,12 +29,12 @@ ARG DB_USERNAME
 ARG DB_PASSWORD
 
 # Set Env Variables
-ENV DB_CONNECTION=sqlsrv
-ENV DB_HOST=onow-mm-db-server-testing.database.windows.net
-ENV DB_PORT=1433
-ENV DB_DATABASE=onow-mm-data-warehouse-testing
-ENV DB_USERNAME=onow-mm-db-server-admin
-ENV DB_PASSWORD=Kf7rzYDrnDcygP8A
+ENV DB_CONNECTION=mysql
+ENV DB_HOST=mysqldbinstance.cp480geljvmp.us-east-1.rds.amazonaws.com
+ENV DB_PORT=3306
+ENV DB_DATABASE=mydb
+ENV DB_USERNAME=admin
+ENV DB_PASSWORD=1LhRzUXf3AgCAGX4
 
 # clear environment config cache
 RUN php artisan config:cache
