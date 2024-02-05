@@ -30,11 +30,11 @@ ARG DB_PASSWORD
 
 # Set Env Variables
 ENV DB_CONNECTION=mysql
-ENV DB_HOST=mysqldbinstance.cp480geljvmp.us-east-1.rds.amazonaws.com
-ENV DB_PORT=3306
-ENV DB_DATABASE=mydb
-ENV DB_USERNAME=admin
-ENV DB_PASSWORD=1LhRzUXf3AgCAGX4
+ENV DB_HOST=$DBURL
+ENV DB_PORT=$DBPORT
+ENV DB_DATABASE=$DBNAME
+ENV DB_USERNAME=$DBUSERNAME
+ENV DB_PASSWORD=$DBPASSWORD
 
 # clear environment config cache
 RUN php artisan config:cache
